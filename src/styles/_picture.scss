@@ -1,0 +1,32 @@
+.pictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  .picture {
+    padding: 1rem;
+    width: 400px;
+    .imageContainer {
+      overflow: hidden;
+      height: 45vh;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.3s ease;
+        &:hover {
+          transform: scale(1.25);
+        }
+      }
+    }
+  }
+}
+
+.content {
+  padding-top: 1rem;
+}
+
+hr {
+  border: 0.15px dashed rgb(212, 187, 205);
+}
